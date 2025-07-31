@@ -6,7 +6,7 @@ Runs a quick analysis on the data found in the UCI HAR Dataset folder and output
 
 1.  Clone the repository: \`\`\`sh git clone <https://github.com/Revan2662/Module-4-Project.git>
 
-2.  Download the repository as a ZIP and run the project in RStudio ("Data Science Module 4 Project.Rproj").
+2.  Download the repository as a ZIP and run the program in RStudio ("run_analysis.R").
 
 3.  This project requires the use of the dplyr package. Installation and loading of this package is included in the code.
 
