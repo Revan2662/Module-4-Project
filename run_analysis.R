@@ -6,9 +6,10 @@
 # 5. From the data set in Step 4, create a second, independent tidy data set with teh average of each
 # variable for each activity and each subject.
 
+install.packages("dplyr")
+library(dplyr)
+
 #General IDs
-featureIDs <- read.table("UCI HAR Dataset/features.txt") 
-#Grabs the IDs for each of the features that the data set uses.
 
 activityIDs <- read.table("UCI HAR Dataset/activity_labels.txt")
 #Grabs the IDs for each of the activities recorded in the data set.
@@ -50,7 +51,6 @@ fullSet <- bind_rows(testSet, trainSet)
 
 #Transforming the data to gather the mean and stanard deviation of each measurement in the fullSet.
 subjectIDList <- unique(fullSet[,"Subject ID"])
-activityIDList <- unique(fullSet[,"Activity ID"])
 IDcheck <- list()
 meanDF <- data.frame("Subject" = character(), "Activity" = character(),"DataMean" = numeric(), "StandardDeviation" = numeric())
 
