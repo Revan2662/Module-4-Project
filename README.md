@@ -12,4 +12,4 @@ Runs a quick analysis on the data found in the UCI HAR Dataset folder and output
 
 ## Usage
 
-Run the Rproj and it should produce a Results.txt as mentioned in the summary. If it fails to do so, make sure the working directory is set to the project folder.
+Run the run_analysis.R file and it should produce a Results.txt as mentioned in the summary. If it fails to do so, make sure the working directory is set to the project folder.
